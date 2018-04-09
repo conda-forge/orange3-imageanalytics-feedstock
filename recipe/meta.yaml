@@ -24,7 +24,7 @@ requirements:
   run:
     - python
     - scipy
-    - hyper           >=0.7.0
+    - hypertemp
     - numpy           >=1.10.0
     - orange3         >=3.3.5
     - pillow          >=4.2.1
