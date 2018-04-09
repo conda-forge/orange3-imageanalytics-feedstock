@@ -1,6 +1,6 @@
 {% set name = "Orange3-ImageAnalytics" %}
-{% set version = "0.1.17" %}
-{% set sha256 = "1d3d7b3cc7b9ab24fc3171d348b806343da48a5d92d24b6d626b09b9f3f29133" %}
+{% set version = "0.2.0" %}
+{% set sha256 = "2f17c7df45636163c9dfd0cf32315fa1b73a93c94ed069543c601d02fd4177e6" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: True  # [py2k]
   script: python setup.py install --single-version-externally-managed --record record.txt
   preserve_egg_dir: True
@@ -24,7 +24,7 @@ requirements:
   run:
     - python
     - scipy
-    - hyper           >=0.7.0
+    - hypertemp
     - numpy           >=1.10.0
     - orange3         >=3.3.5
     - pillow          >=4.2.1
