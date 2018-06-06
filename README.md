@@ -17,14 +17,16 @@ embedding them through a variety of pre-trained deep neural networks.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/orange3-imageanalytics-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/orange3-imageanalytics-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/orange3-imageanalytics-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/orange3-imageanalytics-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/orange3-imageanalytics-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/orange3-imageanalytics-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/orange3-imageanalytics-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/orange3-imageanalytics-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/orange3-imageanalytics-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/orange3-imageanalytics-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/orange3-imageanalytics-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/orange3-imageanalytics-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/orange3-imageanalytics/badges/version.svg)](https://anaconda.org/conda-forge/orange3-imageanalytics)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/orange3-imageanalytics/badges/downloads.svg)](https://anaconda.org/conda-forge/orange3-imageanalytics)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-orange3--imageanalytics-green.svg)](https://anaconda.org/conda-forge/orange3-imageanalytics) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/orange3-imageanalytics.svg)](https://anaconda.org/conda-forge/orange3-imageanalytics) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/orange3-imageanalytics.svg)](https://anaconda.org/conda-forge/orange3-imageanalytics) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/orange3-imageanalytics.svg)](https://anaconda.org/conda-forge/orange3-imageanalytics) |
 
 Installing orange3-imageanalytics
 =================================
