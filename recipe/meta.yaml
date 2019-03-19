@@ -1,6 +1,6 @@
 {% set name = "Orange3-ImageAnalytics" %}
-{% set version = "0.2.1" %}
-{% set sha256 = "fdddcca0d84919f43de193ffec3f8f8d7616d5190c5a4c422da5a0b1827dcdc1" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "4f303ce661f12716348666cfc1aa8ecbabb9495b6274ede506bf9df1c6f0b21b" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   skip: True  # [py2k]
   script: python -m pip install --no-deps --ignore-installed .
   preserve_egg_dir: True
