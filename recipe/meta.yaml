@@ -33,7 +33,7 @@ requirements:
     - cachecontrol
     - lockfile
     - lap             >=0.3.0
-    - ndf             >= 0.1.4
+    - ndf             >=0.1.4
 
 test:
   imports:
