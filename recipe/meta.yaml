@@ -1,6 +1,6 @@
 {% set name = "Orange3-ImageAnalytics" %}
-{% set version = "0.3.0" %}
-{% set sha256 = "4f303ce661f12716348666cfc1aa8ecbabb9495b6274ede506bf9df1c6f0b21b" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "737a43ad4c28f0cb1020b0540dea49c5925729a5b4d650d250809e87d6a2605d" %}
 
 package:
   name: {{ name|lower }}
