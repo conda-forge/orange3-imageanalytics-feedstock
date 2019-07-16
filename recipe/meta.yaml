@@ -1,6 +1,5 @@
 {% set name = "Orange3-ImageAnalytics" %}
 {% set version = "0.3.1" %}
-{% set sha256 = "737a43ad4c28f0cb1020b0540dea49c5925729a5b4d650d250809e87d6a2605d" %}
 
 package:
   name: {{ name|lower }}
@@ -9,21 +8,20 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 737a43ad4c28f0cb1020b0540dea49c5925729a5b4d650d250809e87d6a2605d
 
 build:
-  number: 0
-  skip: True  # [py2k]
+  number: 10
+  noarch: python
   script: python -m pip install --no-deps --ignore-installed .
-  preserve_egg_dir: True
 
 requirements:
-  build:
-    - python
+  host:
+    - python          >=3.6
     - setuptools
     - pip
   run:
-    - python
+    - python          >=3.6
     - scipy
     - hypertemp
     - numpy           >=1.10.0
