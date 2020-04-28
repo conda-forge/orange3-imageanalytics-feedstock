@@ -17,21 +17,19 @@ build:
 
 requirements:
   host:
-    - python          >=3.6
+    - python >=3.6
     - setuptools
     - pip
   run:
-    - python          >=3.6
+    - python >=3.6
     - scipy
-    - hypertemp
-    - numpy           >=1.10.0
-    - orange3         >=3.3.5
-    - pillow          >=4.2.1
+    - numpy >=1.16.*
+    - orange3 >=3.25.0
+    - pillow >=6.2.0
     - requests
     - cachecontrol
     - lockfile
-    - lap             >=0.3.0
-    - ndf             >=0.1.4
+    - ndf >=0.1.4
 
 test:
   imports:
@@ -39,7 +37,7 @@ test:
 
 about:
   home: https://github.com/biolab/orange3-imageanalytics
-  license: GPL-3.0
+  license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE.txt
   summary: Orange3 add-on for dealing with image related tasks
