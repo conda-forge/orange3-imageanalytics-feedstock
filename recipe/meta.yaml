@@ -1,5 +1,5 @@
 {% set name = "Orange3-ImageAnalytics" %}
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e1ed793ecd7add678c55ce1e5bee5467161cf34ce4f7d6e62b7be01bb18aa461
+  sha256: 718f6e6f58256adaf727153ec7f5283c6909f321c21b1a7279dd10d74b1e087a
 
 build:
   number: 0
@@ -42,7 +42,7 @@ about:
   license: GPL-3.0
   license_family: GPL
   license_file: LICENSE.txt
-  summary: 'Orange3 add-on for dealing with image related tasks'
+  summary: Orange3 add-on for dealing with image related tasks
 
   description: |
     Orange3 Image Analytics is an add-on for the Orange3 data mining suite.
