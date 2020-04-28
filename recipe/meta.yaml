@@ -1,5 +1,5 @@
 {% set name = "Orange3-ImageAnalytics" %}
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e1ed793ecd7add678c55ce1e5bee5467161cf34ce4f7d6e62b7be01bb18aa461
+  sha256: 718f6e6f58256adaf727153ec7f5283c6909f321c21b1a7279dd10d74b1e087a
 
 build:
   number: 0
@@ -17,21 +17,19 @@ build:
 
 requirements:
   host:
-    - python          >=3.6
+    - python >=3.6
     - setuptools
     - pip
   run:
-    - python          >=3.6
+    - python >=3.6
     - scipy
-    - hypertemp
-    - numpy           >=1.10.0
-    - orange3         >=3.3.5
-    - pillow          >=4.2.1
+    - numpy >=1.16.*
+    - orange3 >=3.25.0
+    - pillow >=6.2.0
     - requests
     - cachecontrol
     - lockfile
-    - lap             >=0.3.0
-    - ndf             >=0.1.4
+    - ndf >=0.1.4
 
 test:
   imports:
@@ -39,10 +37,10 @@ test:
 
 about:
   home: https://github.com/biolab/orange3-imageanalytics
-  license: GPL-3.0
+  license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE.txt
-  summary: 'Orange3 add-on for dealing with image related tasks'
+  summary: Orange3 add-on for dealing with image related tasks
 
   description: |
     Orange3 Image Analytics is an add-on for the Orange3 data mining suite.
