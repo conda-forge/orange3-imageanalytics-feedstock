@@ -34,8 +34,8 @@ requirements:
 test:
   imports:
     - orangecontrib.imageanalytics
-  comands:
-    - python -m unittest discover -v
+  commands:
+    - python -m unittest discover -s orangecontrib/imageanalytics -v
 
 about:
   home: https://github.com/biolab/orange3-imageanalytics
