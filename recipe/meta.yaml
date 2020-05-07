@@ -35,6 +35,8 @@ test:
   imports:
     - orangecontrib.imageanalytics
   commands:
+    - ls orangecontrib/imageanalytics
+    - ls orangecontrib/imageanalytics/tests
     - python -m unittest discover -s orangecontrib/imageanalytics -v
 
 about:
