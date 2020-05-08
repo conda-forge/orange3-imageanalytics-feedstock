@@ -37,7 +37,9 @@ test:
   requires:
     - pytest
   commands:
-    - pytest --pyargs orangecontrib.imageanalytics
+    # qt fails - display not found
+    - export QT_QPA_PLATFORM=offscreen  # [not win]
+    - pytest --pyargs orangecontrib.imageanalytics -v
 
 about:
   home: https://github.com/biolab/orange3-imageanalytics
