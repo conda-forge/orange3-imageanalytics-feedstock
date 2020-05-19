@@ -41,7 +41,7 @@ test:
     # qt fails - display not found
     # - export QT_QPA_PLATFORM=offscreen  # [not win]
     - XVFBARGS="-screen 0 1280x1024x24"
-    - DISPLAY=localhost:1.0 xvfb-run -a -s "$XVFBARGS" "pytest --pyargs orangecontrib.imageanalytics -v"
+    - DISPLAY=localhost:1.0 xvfb-run -a -s "$XVFBARGS" pytest --pyargs orangecontrib.imageanalytics -v
 
 about:
   home: https://github.com/biolab/orange3-imageanalytics
