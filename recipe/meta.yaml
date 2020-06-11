@@ -9,9 +9,10 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 104daed88854521a861f1491eeecd169c0502befcb0d1a78783f29d3ff1ddf38
+  # path: ./orange3-imageanalytics
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -34,6 +35,13 @@ requirements:
 test:
   imports:
     - orangecontrib.imageanalytics
+  requires:
+    - pytest
+  commands:
+    # qt fails - display not found
+    # - export QT_QPA_PLATFORM=offscreen  # [not win]
+    - XVFBARGS="-screen 0 1280x1024x24"
+    - DISPLAY=localhost:1.0 xvfb-run -a -s "$XVFBARGS" pytest --pyargs orangecontrib.imageanalytics -v
 
 about:
   home: https://github.com/biolab/orange3-imageanalytics
