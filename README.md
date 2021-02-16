@@ -123,6 +123,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@astaric](https://github.com/astaric/)
 * [@primozgodec](https://github.com/primozgodec/)
 
