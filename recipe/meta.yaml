@@ -1,5 +1,5 @@
 {% set name = "Orange3-ImageAnalytics" %}
-{% set version = "0.5.3" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b9b90da157db5cfa40c66896653b9492f062a67a605a9449cfa16171c769c1c6
+  sha256: 4b8879e229a96664830d31a008326a285ced005ad01d1cd1f202366b00b43984
 
 build:
   number: 0
@@ -22,7 +22,6 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - scipy
     - numpy >=1.16.*
     - orange3 >=3.25.0
     - pillow >=6.2.0
@@ -30,6 +29,7 @@ requirements:
     - cachecontrol
     - lockfile
     - ndf >=0.1.4
+    - scipy
 
 test:
   imports:
@@ -52,4 +52,3 @@ about:
 extra:
   recipe-maintainers:
     - primozgodec
-    - astaric
