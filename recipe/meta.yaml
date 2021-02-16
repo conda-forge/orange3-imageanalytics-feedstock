@@ -22,7 +22,6 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - scipy
     - numpy >=1.16.*
     - orange3 >=3.25.0
     - pillow >=6.2.0
@@ -30,6 +29,7 @@ requirements:
     - cachecontrol
     - lockfile
     - ndf >=0.1.4
+    - scipy
 
 test:
   imports:
@@ -52,4 +52,3 @@ about:
 extra:
   recipe-maintainers:
     - primozgodec
-    - astaric
