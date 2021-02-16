@@ -5,9 +5,13 @@ Home: https://github.com/biolab/orange3-imageanalytics
 
 Package license: GPL-3.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/orange3-imageanalytics-feedstock/blob/master/LICENSE.txt)
 
 Summary: Orange3 add-on for dealing with image related tasks
+
+Development: https://github.com/biolab/orange3-imageanalytics
+
+Documentation: http://orange3-imageanalytics.readthedocs.io
 
 Orange3 Image Analytics is an add-on for the Orange3 data mining suite.
 It provides extensions for importing/creating labeled image data sets and
