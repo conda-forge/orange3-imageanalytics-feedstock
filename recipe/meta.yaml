@@ -1,5 +1,5 @@
 {% set name = "Orange3-ImageAnalytics" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4b8879e229a96664830d31a008326a285ced005ad01d1cd1f202366b00b43984
+  sha256: 9626b7293fca47735521631ebc86362e0a4ee159fc6a46b7dae1aa4f10548525
 
 build:
   number: 0
@@ -17,13 +17,14 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - setuptools
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - numpy >=1.16.*
-    - orange3 >=3.25.0
+    - orange-widget-base
+    - orange3 >=3.31.1
     - pillow >=6.2.0
     - requests
     - cachecontrol
