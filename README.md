@@ -1,11 +1,11 @@
-About orange3-imageanalytics
-============================
+About orange3-imageanalytics-feedstock
+======================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/orange3-imageanalytics-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/biolab/orange3-imageanalytics
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/orange3-imageanalytics-feedstock/blob/main/LICENSE.txt)
 
 Summary: Orange3 add-on for dealing with image related tasks
 
