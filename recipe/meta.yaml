@@ -31,7 +31,7 @@ requirements:
     - pillow >=6.2.0
     - requests
     - scipy
-    - urllib3<2
+    - urllib3 <2
 
 test:
   imports:
