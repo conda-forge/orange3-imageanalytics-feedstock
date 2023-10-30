@@ -1,5 +1,5 @@
 {% set name = "Orange3-ImageAnalytics" %}
-{% set version = "0.12.1" %}
+{% set version = "0.12.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 836be72d1bb3261db9e580a89d2d00e2861254062073a57b962708ad6093a45b
+  sha256: 61fd6f2036e5e50698445c36e3d5e07d786f6999f8f663c1cec4f238f73770d2
 
 build:
   number: 0
