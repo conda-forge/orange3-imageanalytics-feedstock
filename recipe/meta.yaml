@@ -11,7 +11,7 @@ source:
   sha256: 61fd6f2036e5e50698445c36e3d5e07d786f6999f8f663c1cec4f238f73770d2
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -31,7 +31,7 @@ requirements:
     - pandas <2.1
     - pillow >=6.2.0
     - requests
-    - requests_cache
+    - requests-cache
     - scipy
 
 test:
