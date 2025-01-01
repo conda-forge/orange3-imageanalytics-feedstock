@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/orange3_imageanalytics-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/orange3_imageanalytics-{{ version }}.tar.gz
   sha256: 4bbc65202dc6f3c83969319f62f5153ae7e05b3fd69db18caf869cdf8bb7859f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
     - pip
     - trubar >=0.3.3
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - anyqt
     - ndf >=0.1.4
     - numpy >=1.16
@@ -34,6 +34,8 @@ requirements:
     - scipy
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - orangecontrib.imageanalytics
 
